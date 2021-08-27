@@ -1,5 +1,5 @@
 import firebase from "firebase";
-
+require('dotenv').config();
 const apiKey = process.env.REACT_APP_API_KEY;
 const authDomain = process.env.REACT_APP_AUTH_DOMAIN;
 const dbUrl = process.env.REACT_APP_DB_URL;
