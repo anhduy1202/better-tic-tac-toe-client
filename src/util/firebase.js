@@ -9,14 +9,14 @@ const messID = process.env.REACT_APP_MESS_ID;
 const appId = process.env.REACT_APP_APP_ID;
 const measurementId = process.env.REACT_APP_MEASUREMENT_ID;
 const firebaseConfig = {
-    apiKey: "AIzaSyDLGHUTTcGB20yvsUvN-KQiy7o4_JyE-WU",
-    authDomain:  "better-tic-tac-toe.firebaseapp.com",
-    databaseURL: "https://better-tic-tac-toe-default-rtdb.firebaseio.com",
-    projectId:  "better-tic-tac-toe",
-    storageBucket:  "better-tic-tac-toe.appspot.com",
-    messagingSenderId:  "650136148230",
-    appId: "1:650136148230:web:87825349146e48e07da687",
-    measurementId:  "G-QMB8CZN9DH"
+ apiKey:  process.env.REACT_APP_API_KEY,
+    authDomain:  process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DB_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket:process.env.REACT_APP_SB,
+    messagingSenderId: process.env.REACT_APP_MESS_ID,
+    appId:  process.env.REACT_APP_APP_ID,
+    measurementId:  process.env.REACT_APP_MEASUREMENT_ID
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
