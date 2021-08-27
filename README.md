@@ -6,7 +6,7 @@ You're tired of playing tic tac toe on your own? Playing with random strangers i
 
 Better Tic Tac Toe is the way to go 🥂
 
-## 🎯 Demo
+## 🎯 Demo (Work best on mobile device)
 
 ### https://betterttt.com
 
