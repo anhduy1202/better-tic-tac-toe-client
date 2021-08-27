@@ -252,7 +252,9 @@ const GamePlay = (props) => {
 
     useEffect(() => {
 
-        const socket = io();
+        const socket = io("https://better-ttt.herokuapp.com",{
+         transports: ['websocket'],
+        });
 
 
         if (rooms) {
