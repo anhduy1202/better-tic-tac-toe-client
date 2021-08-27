@@ -1,4 +1,6 @@
 @import '../scss/variables';
+@import '../scss/mixins';
+
 
 
 .findBtn {
@@ -53,15 +55,12 @@
     border: 3.5px solid black;
     border-radius: 8px;
     padding:0.5rem 0rem 0.5rem 0.5rem;
+     @include breakpoint-down(medium) {
+        font-size: 1rem;
+    }
 
 }
 
 
-input,select,textarea {
-    
-@media screen and (max-width: 767px) {
-    font-size: 1rem;
-}
-  
-}
+
 
