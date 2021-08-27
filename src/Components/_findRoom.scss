@@ -1,0 +1,57 @@
+@import '../scss/variables';
+
+
+.findBtn {
+    margin-top: 2rem;
+    border: 3px solid $darkBlue;
+    background-color: $lightBlue;
+    font-family: $kalam;
+    font-weight: 500;
+    border-radius: 6px;
+    padding:0.2rem 1.5rem 0.2rem 1.5rem;
+    border-radius: 8px;
+    font-size: $font-mdlg;
+    transition: 100ms ease-in-out;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color: $orange;
+    }
+}
+   
+
+.findBtn-darkmode {
+    margin-top: 2rem;
+    border: 3px solid #BB86FC;
+    background-color: #BB86FC;
+    font-family: $kalam;
+    font-weight: 500;
+    border-radius: 6px;
+    padding:0.2rem 1.5rem 0.2rem 1.5rem;
+    border-radius: 8px;
+    font-size: $font-mdlg;
+    transition: 100ms ease-in-out;
+    &:hover {
+        background-color: #03DAC6;
+        border: 3px solid #03DAC6;
+    }
+}
+
+
+.enter-input {
+    &::placeholder{
+        font-family: $kalam;
+        color:black;
+        opacity: 0.3;
+        font-size: 1.325rem;
+
+      
+    }
+    font-family: $kalam;
+    background-color: $placeholder;
+    min-width:72%;
+    text-align: center;
+    border: 3.5px solid black;
+    border-radius: 8px;
+    padding:0.5rem 0rem 0.5rem 0.5rem;
+
+}

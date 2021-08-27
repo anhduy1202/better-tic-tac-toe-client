@@ -1,0 +1,59 @@
+@import "variables";
+
+html {
+    height: 100vh;
+    font-size: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+body {
+    overflow: hidden;
+position: relative;
+background: url('../image/bg.png');
+height:100vh;
+padding:0;
+margin:0;
+font-size: $font-mdlg;
+
+}
+
+.flex {
+    display:flex;
+    &-jc-c {
+        justify-content: center;
+    }
+    &-ai-c {
+        align-items: center;
+    }
+    &-ai-fe {
+        align-items: flex-end;
+    }
+    &-ai-fs {
+        align-items: flex-start;
+    }
+}
+
+.App {
+    transition: ease-in-out 300ms;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    flex-direction: column;
+   
+}   
+
+.App-darkmode { 
+    transition: ease-in-out 300ms;
+    background: #32353a;
+    height: 100vh;
+    width:100vw;
+    overflow: auto;
+    flex-direction: column;
+}

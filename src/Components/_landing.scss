@@ -1,0 +1,90 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+.home {
+    flex-direction: column;
+@include breakpoint-up(medium) {
+    margin-top: 0%;
+}
+
+}
+
+.header{
+    flex-direction: column;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+.header-loggedIn {
+    text-align: center;
+    @include breakpoint-up(medium) {
+        min-width: 40%;
+    }
+    
+}
+
+.ttt {
+    line-height: 2.5rem;
+    font-family: $kalam;
+    font-size: 2.375rem;
+    color : $veryDarkBlue;
+    margin-top: 0;
+    border-bottom: 3px solid $darkBlue;
+   
+}
+.better {
+    font-family: $kalam;
+    margin-bottom: 1rem;
+    font-size: $font-md;
+    color:$veryDarkBlue;
+    @include breakpoint-up(medium) {
+    font-size: 1.4rem;
+    }
+    
+}
+.better-darkmode {
+    font-family: $kalam;
+    margin-bottom: 1rem;
+    font-size: $font-md;
+    color:#BB86FC;
+    @include breakpoint-up(medium) {
+        font-size: 1.4rem;
+        }
+    
+}
+.ttt-darkmode {
+    line-height: 2.5rem;
+    font-family: $kalam;
+    font-size: 2.375rem;
+    color:#BB86FC;
+    margin-top: 0;
+    border-bottom: 3px solid white;
+}
+
+.or {
+    margin: 1rem 0 1rem 0;
+    font-size: $font-md;
+    
+}
+
+.greeting {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    @include breakpoint-up(medium) {
+        font-size: 1.5rem;
+        }
+
+}
+
+.greeting-darkmode {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #03DAC6;
+    font-weight: 700;
+    @include breakpoint-up(medium) {
+        font-size: 1.5rem;
+        }
+
+
+
+}

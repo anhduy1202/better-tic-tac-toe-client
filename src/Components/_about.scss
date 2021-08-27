@@ -1,0 +1,107 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.about {
+    &-container {
+    flex-direction: column;
+    font-family: $kalam;
+    margin: 0 2rem 0 2rem; 
+    }
+    &-intro {
+        margin-bottom: 1rem;
+        background-color: $lightBlue;
+        border-radius: 12px;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        @include breakpoint-up(medium) {
+            font-size: 1.3rem;
+            max-width: 60%;
+        }
+    }
+    &-intro-darkmode {
+        margin-bottom: 1rem;
+        background-color: #BB86FC;
+        border-radius: 12px;
+        padding: 0.5rem;
+        font-size: 1.1rem;
+        @include breakpoint-up(medium) {
+            font-size: 1.3rem;
+            max-width: 60%;
+        }
+    }
+    &-logo {
+        min-width: 50%;
+        @include breakpoint-up(medium) {
+            min-width: 30%;
+           max-width: 50%;
+        }
+        @include breakpoint-up(large) {
+            min-width: 15%;
+           max-width: 50%;
+        }
+    }
+}
+
+.guide {
+    &-header{
+        margin-top: 0.5rem;
+        margin-bottom: -1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        @include breakpoint-up(medium) {
+            font-size: 1.5rem;
+        }
+    }
+    &-header-darkmode{
+        margin-top: 0.5rem;
+        margin-bottom: -1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #BB86FC;
+        @include breakpoint-up(medium) {
+            font-size: 1.5rem;
+        }
+    }
+    &-list {
+        color: $veryDarkBlue;
+        list-style: none;
+        font-size: 1.1rem;
+        margin-right: -0.5rem;
+        margin-left: -1rem;
+        @include breakpoint-up(medium) {
+            font-size: 1.4rem;
+        }
+    }
+    &-list-darkmode {
+        color: white;
+        list-style: none;
+        font-size: 1.1rem;
+        margin-right: -0.5rem;
+        margin-left: -1rem;
+        @include breakpoint-up(medium) {
+            font-size: 1.4rem;
+        }
+    }
+}
+.att {
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 1.2rem;
+    font-size: 0.8rem;
+    color:#5e5e5e;
+    @include breakpoint-up(medium) {
+        margin-left: 3rem;
+        font-size: 1rem;
+    }
+}
+.att-darkmode {
+    margin-top: 1rem;
+    text-align: center;
+    margin-left: 1.2rem;
+    font-size: 0.8rem;
+    color:#b4b4b4;
+    @include breakpoint-up(medium) {
+        margin-left: 3rem;
+        font-size: 1rem;
+    }
+}

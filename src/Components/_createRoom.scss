@@ -1,0 +1,85 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+
+.container {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    @include breakpoint-up(medium) {
+        transform: translateY(5%);
+        }
+        @include breakpoint-up(large) {
+            transform: translateY(-2%);
+          }
+}
+.join {
+    cursor: pointer;
+    border: 3px solid black;
+    background-color: $lightBlue;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-family: $kalam;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: $font-mdlg;
+    transition: 100ms ease-in-out;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color: $orange;
+    }
+    @include breakpoint-up(medium) {
+        font-size: 1.5rem;
+        }
+}
+
+.gameplay {
+    height: auto;
+    
+}
+
+.join-darkmode {
+    cursor: pointer;
+    border: 3px solid #BB86FC;
+    background-color: #BB86FC;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-family: $kalam;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: $font-mdlg;
+    transition: 100ms ease-in-out;
+    &:hover {
+        background-color: #03DAC6;
+        border: 3px solid #03DAC6;
+
+    }
+    @include breakpoint-up(medium) {
+        font-size: 1.5rem;
+        }
+
+
+}
+.id {
+    color:black;
+    font-size: 1.5rem;
+    span {
+        font-weight: 700;
+        color: $darkBlue;
+    }
+    @include breakpoint-up(medium) {
+        font-size: 1.7rem;
+        }
+}
+.id-darkmode {
+    color: white;
+    font-size: 1.5rem;
+    span {
+        font-weight: 700;
+        color: #BB86FC;
+    }
+    @include breakpoint-up(medium) {
+        font-size: 1.7rem;
+        }
+}
+
+.username-darkmode {
+    color:white;
+}

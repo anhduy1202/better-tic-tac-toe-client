@@ -1,0 +1,56 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+.login{
+    cursor: pointer;
+    border: 3.5px solid black;
+    background-color: $lightBlue;
+    font-family: $kalam;
+    font-size: $font-lg;
+    padding: 0.1rem 2.525rem 0.1rem 2.525rem;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    transition: ease-in-out 100ms;
+
+    &:hover {
+        background-color: $orange;
+    }
+}
+
+.login-darkmode {
+    cursor: pointer;
+    border: 3.5px solid #BB86FC;
+    background-color: #BB86FC;
+    font-family: $kalam;
+    font-size: $font-lg;
+    padding: 0.1rem 2.525rem 0.1rem 2.525rem;
+    border-radius: 14px;
+    transition: ease-in-out 100ms;
+
+    &:hover {
+        transition: ease-in-out 200ms;
+        background-color: #03DAC6;
+        border: 3.5px solid #03DAC6;
+
+    }
+
+}
+
+.logout {
+    color:white;
+    font-weight: 700;
+    transition: ease-in-out 100ms;
+
+    &:hover {
+        color :$orange;
+    }
+}
+
+.logout {
+    color:white;
+    font-weight: 700;
+    transition: ease-in-out 100ms;
+
+    &:hover {
+        color :$orange;
+    }
+}

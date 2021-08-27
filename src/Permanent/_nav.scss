@@ -1,0 +1,74 @@
+@import "../scss/variables";
+@import '../scss/mixins';
+.nav{
+    position: relative;
+    background-color: $lightBlue;
+    font-size: $font-mdlg;
+    font-family: $lato;
+    font-weight: 400;
+    padding: 1rem 0 1rem 0;
+    transition: ease-in-out 300ms;
+    margin-bottom: 2rem;
+    @include breakpoint-up(medium) {
+        font-size: 1.3rem;
+        
+        }
+
+
+&-darkMode {
+    cursor: pointer;
+   position: absolute;
+   right:0;
+    margin-right: 1.4375rem;
+    @include breakpoint-up(medium) {
+        transform: scale(1.2);
+        }
+    
+}
+
+}
+.nav-darkmode {
+    transition: ease-in-out 300ms;
+    position: relative;
+    background-color: #BB86FC;
+    font-size: $font-mdlg;
+    font-family: $lato;
+    font-weight: 400;
+    padding: 1rem 0 1rem 0;
+    margin-bottom: 2rem;
+    @include breakpoint-up(medium) {
+        font-size: 1.3rem;
+        
+        }
+   
+  
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin-right: 1.875rem;
+    transition: ease-in-out 100ms;
+
+    &:hover {
+        font-weight: 700;
+        color :#fb8500;
+    }
+    @include breakpoint-up(medium) {
+        margin-right: 2.2rem;
+
+        
+        }
+    
+}
+
+.link {
+    margin-left: 2rem;
+   
+}
+
+
+
+.nav-compete {
+    font-weight: 700;
+    color: $veryDarkBlue;
+}

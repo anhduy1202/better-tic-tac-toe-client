@@ -1,0 +1,48 @@
+@import "../scss/variables";
+@import "../scss/mixins";
+
+.room{
+    font-family: $kalam;
+    font-size: 1.325rem;
+    flex-direction: column;
+    margin-left: 1rem;
+    @include breakpoint-up(medium) {
+    }
+}
+
+
+.create {
+    align-self: center;
+    &:hover{
+        background-color:$orange;
+        color:black;
+    }
+    cursor: pointer;
+    background-color: $lightBlue;
+    border-radius: 8px;
+    border: 3.5px solid black;
+    padding: 0.12rem 1.68rem 0.12rem 1.68rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  transition: ease-in-out 100ms;
+}
+
+
+.create-darkmode {
+    align-self: center;
+    &:hover{
+        background-color:#03DAC6;
+        border: 3.5px solid #03DAC6;
+
+        color:black;
+    }
+    cursor: pointer;
+    background-color: #BB86FC;
+    border-radius: 8px;
+    border: 3.5px solid #BB86FC;
+    padding: 0.12rem 1.68rem 0.12rem 1.68rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+  transition: ease-in-out 100ms;
+}
+

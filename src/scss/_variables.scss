@@ -1,0 +1,47 @@
+
+
+//Font-size
+$font-xs: 0.5625rem;
+$font-s: 0.7575rem;
+$font-sm: 0.8425rem;
+$font-md:   1.0625rem;
+$font-mdlg: 1.125rem;
+$font-lg: 1.6875rem;
+$font-xlg: 1.9025rem;
+
+
+$font-desktop-md: 1.1625rem;
+$font-desktop-mdlg: 1.5625rem;
+$font-desktop-lg : 2.5025rem;
+$font-desktop-xlg: 2.9025rem;
+
+//Colors:
+
+$lightBlue: #8ECAE6;
+$darkBlue: #219EBC;
+$veryDarkBlue: #023047;
+
+$grey: #EAEAEA;
+$placeholder: #ECECEC;
+
+$darkGrey: #D1D1D1;
+$orange : #fb8500;
+
+$lightGreen :#bde4a8;
+$lightPurple: #D4B2D8;
+
+//Colors array
+// $colors: (
+//   "green": $lightGreen,
+//   "purple": $lightPurple,
+//   "lightBlue": $lightBlue,
+//   "darkBlue": $darkBlue
+// );
+
+//Font-family
+
+//300,400,700
+$kalam: 'Kalam', cursive;
+
+//100,300,400,700,900
+$lato:  'Lato', sans-serif;
