@@ -2,7 +2,7 @@
   "name": "react-auth0",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://sleepy-waters-41122.herokuapp.com/",
+  "proxy": "https://better-tic-tac-toe-server.herokuapp.com",
   "dependencies": {
     "@auth0/auth0-react": "^1.6.0",
     "@testing-library/jest-dom": "^5.14.1",
