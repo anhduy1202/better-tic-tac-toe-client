@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Better Tic Tac Toe ✖️⭕
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎮🎲 Welcome to Better Tic Tac Toe 
 
-## Available Scripts
+You're tired of playing tic tac toe on your own? Playing with random strangers instead of your fellow cousins, friends? You want a game that you and your friends that start right away just by entering some numbers?
 
-In the project directory, you can run:
+Better Tic Tac Toe is the way to go 🥂
 
-### `npm start`
+## 🎯 Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### https://betterttt.com
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![image](https://user-images.githubusercontent.com/58461444/131197257-c5fd9c21-8b72-4937-9084-406513243f56.png)
 
-### `npm test`
+### 🌙 Dark mode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image](https://user-images.githubusercontent.com/58461444/131197325-ca249949-7a68-443f-83ba-413afb3985ed.png)
 
-### `npm run build`
+## 🏆 Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* 🔑 User Authentication
+* 🎨 Create Room
+* 🔎 Join Rooms through Room ID
+* ⚔️ Compete with other people by joining their room in real time
+* ⚡ Kick you out if Room ID doesn't exist or the room is full
+* 🌙 Dark Mode !!!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📜 Game Rules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### First person make a 4 in a row wins 🥳
 
-### `npm run eject`
+## ⭐ Upcoming Features 
+* 🤖 Single Player mode
+* ✨ Customize your profile
+* 🕹️ Higher Dimension Options (10x10, 20x20,...)
+* ...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ⌨️ Tech Stacks
+* **Auth0**: User Authentication
+* **ReactJS**: FrontEnd
+* **SCSS**: Styling
+* **Socket.io**: Real-time connecting
+* **Real-time database Firebase**: Update games + available rooms in real-time
+* **Toastify**: Pop-up notifications
+* **Netlify**: Client hosting
+* **Heroku**: Server hosting
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 😍 Conclusion
+Hope you enjoy the games, leave any feedbacks if you have
+### ⭐ Give a star if you enjoy the game, it means a lot 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Client + Server respositories
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+https://github.com/anhduy1202/better-tic-tac-toe-server/compare/a2ec176f...a0a3786a
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://github.com/anhduy1202/better-tic-tac-toe-client
