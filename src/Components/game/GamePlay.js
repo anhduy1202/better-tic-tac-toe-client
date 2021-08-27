@@ -252,7 +252,7 @@ const GamePlay = (props) => {
 
     useEffect(() => {
 
-        const socket = io("https://better-tic-tac-toe-server.herokuapp.com/");
+        const socket = io();
 
 
         if (rooms) {
