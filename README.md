@@ -27,7 +27,7 @@ Better Tic Tac Toe is the way to go 🥂
 
 ## 📜 Game Rules
 
-### First person make a 4 in a row wins 🥳
+### First person make a 4 in a row/column/diagonal wins 🥳
 
 ## ⭐ Upcoming Features 
 * 🤖 Single Player mode
