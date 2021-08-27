@@ -252,9 +252,7 @@ const GamePlay = (props) => {
 
     useEffect(() => {
 
-        const socket = io({
-            'sync disconnect on unload': true
-        });
+        const socket = io("https://better-tic-tac-toe-server.herokuapp.com/");
 
 
         if (rooms) {
