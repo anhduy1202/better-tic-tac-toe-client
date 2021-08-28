@@ -1257,10 +1257,8 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   margin-bottom: 1rem;
+  margin-left: 5rem;
   font-size: 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
