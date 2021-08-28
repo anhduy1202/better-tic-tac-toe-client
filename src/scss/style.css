@@ -974,7 +974,7 @@ a:hover {
 .player2Overlay {
   position: absolute;
   background-color: transparent;
-  width: 220px;
+  width: 290px;
   height: 290px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1006,7 +1006,7 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  min-width: 240px;
+  min-width: 290px;
   height: 290px;
   border: 5px solid black;
   text-align: center;
