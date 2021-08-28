@@ -1219,6 +1219,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 3rem;
 }
 
 .game-id {
@@ -1353,8 +1354,8 @@ a:hover {
 }
 
 .rule-container {
-  height: 150px;
-  width: 250px;
+  height: 120px;
+  width: 230px;
   position: absolute;
   text-align: center;
   -ms-flex-item-align: center;
@@ -1398,8 +1399,8 @@ a:hover {
 }
 
 .rule-container-darkmode {
-  height: 150px;
-  width: 250px;
+  height: 120px;
+  width: 230px;
   position: absolute;
   text-align: center;
   -ms-flex-item-align: center;
