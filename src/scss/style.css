@@ -872,6 +872,15 @@ a:hover {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
           flex: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   max-width: 44px;
   text-align: center;
@@ -879,8 +888,6 @@ a:hover {
   border-radius: 6px;
   background: none;
   cursor: pointer;
-  display: -ms-grid;
-  display: grid;
   place-items: center;
   font-size: 1.5rem;
   color: #023047;
@@ -1312,7 +1319,7 @@ a:hover {
 
 .rule-container {
   width: 250px;
-  height: 150px;
+  height: 120px;
   position: absolute;
   text-align: center;
   -ms-flex-item-align: center;
