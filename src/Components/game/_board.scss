@@ -37,8 +37,8 @@
 
   }
   .board {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -51,15 +51,12 @@
     width: 350px;
   height: 350px;
 }
-  @include breakpoint-down(small) {
-    width: 210px;
-    height: 210px;
-  }
+ 
     
   }
   .board-darkmode {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -72,10 +69,7 @@
     width: 350px;
   height: 350px;
 }
-  @include breakpoint-down(small) {
-    width: 210px;
-    height: 210px;
-  }
+  
   }
 
  
@@ -90,8 +84,8 @@
    
     position: absolute;
     background-color: transparent;
-    width: 250px;
-    height: 300px;
+    width: 180px;
+    height: 230px;
     justify-content:center;
   align-items: flex-end;
   @include breakpoint-up(medium) {
@@ -102,10 +96,7 @@
   width: 350px;
 height: 430px;
 }
-@include breakpoint-down(small) {
-  width: 210px;
-  height: 290px;
-}
+
    
   
   }
@@ -113,16 +104,13 @@ height: 430px;
    
     position: absolute;
     background-color: transparent;
-    width: 300px;
-    height: 380px;
+    width: 180px;
+    height: 230px;
     justify-content:center;
   align-items: flex-end; 
   @include breakpoint-up(medium) {
     width: 400px;
   height: 480px;
-}@include breakpoint-down(small) {
-  width: 240px;
-  height: 320px;
 }
 @include breakpoint-up(large) {
   width: 350px;
@@ -138,9 +126,9 @@ height: 430px;
   .win-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 300px;
+    width: 180px;
+    height: 230px;
     border: 5px solid black;
-    height: 380px;
     text-align: center;
     background-color: $darkBlue;
     opacity: 0.9;
@@ -156,10 +144,7 @@ height: 430px;
     width: 350px;
   height: 430px;
   }
-  @include breakpoint-down(small) {
-    width: 240px;
-    height: 320px;
-  }
+  
   }
 
   .win {
@@ -181,9 +166,9 @@ height: 430px;
   .draw-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 300px;
+    width: 180px;
+    height: 230px;
     border: 5px solid black;
-    height: 380px;
     text-align: center;
     background-color: $darkBlue;
     opacity: 0.9;
@@ -195,10 +180,7 @@ height: 430px;
       width: 400px;
     height: 480px;
   }
-  @include breakpoint-down(small) {
-    width: 240px;
-    height: 320px;
-  }
+  
   @include breakpoint-up(large) {
     width: 350px;
   height: 430px;
@@ -276,7 +258,7 @@ height: 430px;
   }
   .gameplay-container {
     flex-direction: column;
-    margin-right: 3rem;
+    margin-right: 3.5rem;
     
 
   }
@@ -394,8 +376,9 @@ height: 430px;
   }
 
   .rule-container {
-    height: 120px;
-    width: 230px;
+   
+    width: 180px;
+    height: 80px;
     position: absolute;
     text-align: center;
     align-self: center;
@@ -411,11 +394,7 @@ height: 430px;
       width: 350px;
       font-size: 1.5rem;
    }
-   @include breakpoint-down(small) {
-    height: 120px;
-    width: 200px;
-
-  }
+  
   @include breakpoint-up(large) {
     height: 150px;
     width: 310px;
@@ -425,8 +404,8 @@ height: 430px;
   }
 
   .rule-container-darkmode {
-    height: 120px;
-    width: 230px;
+    width: 180px;
+    height: 80px;
     position: absolute;
     text-align: center;
     align-self: center;
@@ -441,11 +420,7 @@ height: 430px;
       width: 350px;
       font-size: 1.5rem;
    }
-   @include breakpoint-down(small) {
-    height: 120px;
-    width: 200px;
-
-  }
+  
   @include breakpoint-up(large) {
     height: 150px;
     width: 310px;
@@ -457,7 +432,7 @@ height: 430px;
     cursor: pointer;
     align-self: flex-end;
     padding:0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: transparent;
     border:none;
     color: $darkBlue;
@@ -470,17 +445,14 @@ height: 430px;
       
       font-size: 1.7rem;
    }
-   @include breakpoint-down(small) {
-   font-size: 1.3rem;
-
-  }
+   
   }
 
   .close-darkmode {   
      cursor: pointer;
     align-self: flex-end;
     padding:0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: transparent;
     border:none;
     color: #00ffe5;
@@ -493,10 +465,7 @@ height: 430px;
       
       font-size: 1.7rem;
    }
-   @include breakpoint-down(small) {
-    font-size: 1.3rem;
  
-   }
   }
 
   
