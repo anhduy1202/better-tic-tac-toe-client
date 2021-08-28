@@ -807,7 +807,7 @@ a:hover {
 }
 
 .board {
-  width: 180px;
+  min-width: 180px;
   height: 180px;
   -ms-flex-item-align: center;
       align-self: center;
@@ -838,7 +838,7 @@ a:hover {
 }
 
 .board-darkmode {
-  width: 180px;
+  min-width: 180px;
   height: 180px;
   background-color: black;
   display: -webkit-box;
@@ -880,15 +880,9 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #023047;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (max-width: 25em) {
-  .square {
-    font-size: 2rem;
-  }
 }
 
 .square-darkmode {
