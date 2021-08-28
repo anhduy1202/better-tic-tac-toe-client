@@ -807,9 +807,9 @@ a:hover {
 }
 
 .square {
-  -webkit-box-flex: 33%;
-      -ms-flex: 33%;
-          flex: 33%;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
   height: 100%;
   border: 2px solid #219EBC;
   border-radius: 6px;
@@ -830,9 +830,9 @@ a:hover {
 }
 
 .square-darkmode {
-  -webkit-box-flex: 33%;
-      -ms-flex: 33%;
-          flex: 33%;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
   height: 100%;
   border: 2px solid #BB86FC;
   border-radius: 6px;
@@ -916,9 +916,9 @@ a:hover {
 }
 
 .row {
-  -webkit-box-flex: 33%;
-      -ms-flex: 33%;
-          flex: 33%;
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
