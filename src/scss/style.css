@@ -57,7 +57,8 @@ body {
   transition: ease-in-out 300ms;
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -70,7 +71,8 @@ body {
   background: #32353a;
   height: 100vh;
   width: 100vw;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -430,12 +432,13 @@ a:hover {
 }
 
 .ttt {
-  line-height: 2.5rem;
+  line-height: 2.2rem;
   font-family: "Kalam", cursive;
-  font-size: 2.375rem;
+  font-size: 2rem;
   color: #023047;
   margin-top: 0;
   border-bottom: 3px solid #219EBC;
+  margin-bottom: 1rem;
 }
 
 .better {
@@ -465,11 +468,12 @@ a:hover {
 }
 
 .ttt-darkmode {
-  line-height: 2.5rem;
+  line-height: 2.2rem;
   font-family: "Kalam", cursive;
-  font-size: 2.375rem;
+  font-size: 2rem;
   color: #BB86FC;
   margin-top: 0;
+  margin-bottom: 1rem;
   border-bottom: 3px solid white;
 }
 
@@ -720,7 +724,7 @@ a:hover {
 }
 
 .findBtn {
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   border: 3px solid #219EBC;
   background-color: #8ECAE6;
   font-family: "Kalam", cursive;
@@ -740,7 +744,7 @@ a:hover {
 }
 
 .findBtn-darkmode {
-  margin-top: 2rem;
+  margin-top: 1.2rem;
   border: 3px solid #BB86FC;
   background-color: #BB86FC;
   font-family: "Kalam", cursive;
@@ -796,6 +800,12 @@ a:hover {
   font-size: 1.325rem;
 }
 
+@media (max-width: 63.9375em) {
+  .enter-input {
+    font-size: 1rem;
+  }
+}
+
 .square {
   -webkit-box-flex: 33%;
       -ms-flex: 33%;
@@ -808,7 +818,7 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  font-size: 40px;
+  font-size: 2rem;
   color: #023047;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -831,7 +841,7 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  font-size: 40px;
+  font-size: 32px;
   color: #03DAC6;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
@@ -844,8 +854,8 @@ a:hover {
 }
 
 .board {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -873,14 +883,14 @@ a:hover {
 
 @media (max-width: 25em) {
   .board {
-    width: 240px;
-    height: 240px;
+    width: 210px;
+    height: 210px;
   }
 }
 
 .board-darkmode {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -908,8 +918,8 @@ a:hover {
 
 @media (max-width: 25em) {
   .board-darkmode {
-    width: 240px;
-    height: 240px;
+    width: 210px;
+    height: 210px;
   }
 }
 
@@ -929,8 +939,8 @@ a:hover {
 .player1Overlay {
   position: absolute;
   background-color: transparent;
-  width: 300px;
-  height: 380px;
+  width: 250px;
+  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -955,8 +965,8 @@ a:hover {
 
 @media (max-width: 25em) {
   .player1Overlay {
-    width: 240px;
-    height: 320px;
+    width: 210px;
+    height: 290px;
   }
 }
 
