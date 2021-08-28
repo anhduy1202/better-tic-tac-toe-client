@@ -1264,6 +1264,7 @@ a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-left: 2rem;
 }
 
 .game-id {
