@@ -873,6 +873,7 @@ a:hover {
       -ms-flex: 20%;
           flex: 20%;
   height: 100%;
+  max-width: 40px;
   border: 2px solid #219EBC;
   border-radius: 6px;
   background: none;
@@ -890,6 +891,7 @@ a:hover {
       -ms-flex: 20%;
           flex: 20%;
   height: 100%;
+  max-width: 40px;
   border: 2px solid #BB86FC;
   border-radius: 6px;
   background: none;
@@ -897,16 +899,10 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  font-size: 32px;
+  font-size: 1rem;
   color: #03DAC6;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (max-width: 25em) {
-  .square-darkmode {
-    font-size: 2rem;
-  }
 }
 
 .row {
@@ -926,7 +922,7 @@ a:hover {
   position: absolute;
   background-color: transparent;
   width: 180px;
-  height: 230px;
+  height: 250px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1179,7 +1175,7 @@ a:hover {
           flex-direction: column;
   min-height: 76vh;
   overflow: auto;
-  width: 84%;
+  width: 100%;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
