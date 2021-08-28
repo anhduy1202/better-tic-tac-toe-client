@@ -837,6 +837,13 @@ a:hover {
   }
 }
 
+@media (min-height: 850px) {
+  .board {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 .board-darkmode {
   min-width: 220px;
   height: 220px;
@@ -865,6 +872,13 @@ a:hover {
   .board-darkmode {
     width: 350px;
     height: 350px;
+  }
+}
+
+@media (min-height: 850px) {
+  .board-darkmode {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -900,6 +914,13 @@ a:hover {
   }
 }
 
+@media (min-height: 850px) {
+  .square {
+    max-width: 60px;
+    font-size: 2rem;
+  }
+}
+
 .square-darkmode {
   -webkit-box-flex: 20%;
       -ms-flex: 20%;
@@ -931,6 +952,13 @@ a:hover {
   .square-darkmode {
     max-width: 44px;
     font-size: 1.5rem;
+  }
+}
+
+@media (min-height: 850px) {
+  .square-darkmode {
+    max-width: 60px;
+    font-size: 2rem;
   }
 }
 
@@ -980,6 +1008,13 @@ a:hover {
   }
 }
 
+@media (min-height: 850px) {
+  .player1Overlay {
+    width: 300px;
+    height: 380px;
+  }
+}
+
 .player2Overlay {
   position: absolute;
   background-color: transparent;
@@ -1004,6 +1039,13 @@ a:hover {
   .player2Overlay {
     width: 350px;
     height: 430px;
+  }
+}
+
+@media (min-height: 850px) {
+  .player2Overlay {
+    width: 300px;
+    height: 380px;
   }
 }
 
@@ -1047,6 +1089,13 @@ a:hover {
   .win-overlay {
     width: 350px;
     height: 430px;
+  }
+}
+
+@media (min-height: 850px) {
+  .win-overlay {
+    width: 370px;
+    height: 370px;
   }
 }
 
@@ -1106,6 +1155,13 @@ a:hover {
   .draw-overlay {
     width: 350px;
     height: 430px;
+  }
+}
+
+@media (min-height: 850px) {
+  .draw-overlay {
+    width: 370px;
+    height: 370px;
   }
 }
 
@@ -1339,6 +1395,7 @@ a:hover {
 .rule-container {
   width: 250px;
   height: 120px;
+  font-size: 1rem;
   position: absolute;
   text-align: center;
   -ms-flex-item-align: center;
@@ -1352,7 +1409,6 @@ a:hover {
   background-color: #D4B2D8;
   opacity: 1;
   z-index: 10;
-  font-size: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1377,7 +1433,7 @@ a:hover {
 
 .rule-container-darkmode {
   width: 250px;
-  height: 150px;
+  height: 120px;
   font-size: 1rem;
   position: absolute;
   text-align: center;
