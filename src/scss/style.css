@@ -905,6 +905,15 @@ a:hover {
       -ms-flex: 20%;
           flex: 20%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 2rem;
   border: 2px solid #BB86FC;
   border-radius: 6px;
