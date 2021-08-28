@@ -807,18 +807,19 @@ a:hover {
 }
 
 .board {
-  width: 250px;
-  height: 250px;
-  -ms-grid-row-align: center;
+  width: 180px;
+  height: 180px;
+  -ms-flex-item-align: center;
       align-self: center;
-  margin-right: 3rem;
+  margin-right: 4rem;
   background-color: white;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(0, 1fr))[5];
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-  -ms-grid-rows: (minmax(0, 1fr))[5];
-      grid-template-rows: repeat(5, minmax(0, 1fr));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
 
@@ -837,19 +838,19 @@ a:hover {
 }
 
 .board-darkmode {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   background-color: black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-row-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
       align-self: center;
-  margin-right: 3rem;
-  display: grid;
-  -ms-grid-columns: (minmax(0, 1fr))[5];
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-  -ms-grid-rows: (minmax(0, 1fr))[5];
-      grid-template-rows: repeat(5, minmax(0, 1fr));
+  margin-right: 4rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
 
@@ -868,8 +869,10 @@ a:hover {
 }
 
 .square {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
   height: 100%;
-  width: 100%;
   border: 2px solid #219EBC;
   border-radius: 6px;
   background: none;
@@ -889,8 +892,10 @@ a:hover {
 }
 
 .square-darkmode {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
   height: 100%;
-  width: 100%;
   border: 2px solid #BB86FC;
   border-radius: 6px;
   background: none;
@@ -910,11 +915,24 @@ a:hover {
   }
 }
 
+.row {
+  -webkit-box-flex: 20%;
+      -ms-flex: 20%;
+          flex: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .player1Overlay {
   position: absolute;
   background-color: transparent;
-  width: 250px;
-  height: 300px;
+  width: 180px;
+  height: 230px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -940,8 +958,8 @@ a:hover {
 .player2Overlay {
   position: absolute;
   background-color: transparent;
-  width: 250px;
-  height: 300px;
+  width: 180px;
+  height: 230px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -972,8 +990,8 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 250px;
-  height: 300px;
+  width: 180px;
+  height: 230px;
   border: 5px solid black;
   text-align: center;
   background-color: #219EBC;
@@ -1031,8 +1049,8 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 250px;
-  height: 300px;
+  width: 180px;
+  height: 230px;
   border: 5px solid black;
   text-align: center;
   background-color: #219EBC;
@@ -1315,8 +1333,8 @@ a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
   border-radius: 16px;
   -webkit-box-shadow: 5px 10px 20px 0 #be98c2;
           box-shadow: 5px 10px 20px 0 #be98c2;
@@ -1355,8 +1373,8 @@ a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
   border-radius: 16px;
   background-color: #BB86FC;
   opacity: 1;
