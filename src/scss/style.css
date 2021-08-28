@@ -807,11 +807,11 @@ a:hover {
 }
 
 .board {
-  min-width: 180px;
-  height: 180px;
+  min-width: 220px;
+  height: 220px;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-right: 4rem;
+  margin-right: 3rem;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -838,15 +838,15 @@ a:hover {
 }
 
 .board-darkmode {
-  min-width: 180px;
-  height: 180px;
+  min-width: 220px;
+  height: 220px;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
-  margin-right: 4rem;
+  margin-right: 3rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -873,7 +873,7 @@ a:hover {
       -ms-flex: 20%;
           flex: 20%;
   height: 100%;
-  max-width: 40px;
+  max-width: 44px;
   border: 2px solid #219EBC;
   border-radius: 6px;
   background: none;
@@ -881,7 +881,7 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #023047;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -891,7 +891,7 @@ a:hover {
       -ms-flex: 20%;
           flex: 20%;
   height: 100%;
-  max-width: 40px;
+  max-width: 44px;
   border: 2px solid #BB86FC;
   border-radius: 6px;
   background: none;
@@ -899,7 +899,7 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #03DAC6;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
@@ -921,8 +921,8 @@ a:hover {
 .player1Overlay {
   position: absolute;
   background-color: transparent;
-  width: 180px;
-  height: 250px;
+  width: 220px;
+  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -948,8 +948,8 @@ a:hover {
 .player2Overlay {
   position: absolute;
   background-color: transparent;
-  width: 180px;
-  height: 230px;
+  width: 220px;
+  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -980,8 +980,8 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 180px;
-  height: 230px;
+  width: 220px;
+  height: 220px;
   border: 5px solid black;
   text-align: center;
   background-color: #219EBC;
@@ -1039,8 +1039,8 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 180px;
-  height: 230px;
+  width: 220px;
+  height: 220px;
   border: 5px solid black;
   text-align: center;
   background-color: #219EBC;
@@ -1248,7 +1248,7 @@ a:hover {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 1rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1257,12 +1257,6 @@ a:hover {
 @media (min-width: 50em) {
   .user-container {
     font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 25em) {
-  .user-container {
-    font-size: 1rem;
   }
 }
 
@@ -1316,8 +1310,8 @@ a:hover {
 }
 
 .rule-container {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   position: absolute;
   text-align: center;
   -ms-flex-item-align: center;
@@ -1355,8 +1349,8 @@ a:hover {
 }
 
 .rule-container-darkmode {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 150px;
   font-size: 1rem;
   position: absolute;
   text-align: center;
@@ -1396,7 +1390,7 @@ a:hover {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: transparent;
   border: none;
   color: #219EBC;
@@ -1419,7 +1413,7 @@ a:hover {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: transparent;
   border: none;
   color: #00ffe5;
