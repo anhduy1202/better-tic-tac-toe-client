@@ -1006,7 +1006,7 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  min-width: 220px;
+  min-width: 240px;
   height: 290px;
   border: 5px solid black;
   text-align: center;
@@ -1065,7 +1065,7 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  min-width: 220px;
+  min-width: 240px;
   height: 290px;
   border: 5px solid black;
   text-align: center;
@@ -1125,7 +1125,7 @@ a:hover {
 .newGame {
   position: absolute;
   cursor: pointer;
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-size: 1.6875rem;
   background-color: #8ECAE6;
   border-radius: 12px;
