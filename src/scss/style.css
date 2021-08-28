@@ -882,7 +882,6 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  max-width: 44px;
   text-align: center;
   border: 2px solid #219EBC;
   border-radius: 6px;
@@ -892,6 +891,12 @@ a:hover {
   font-size: 1.5rem;
   color: #023047;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 63.9375em) {
+  .square {
+    max-width: 44px;
+  }
 }
 
 .square-darkmode {
@@ -1257,6 +1262,9 @@ a:hover {
           align-items: flex-end;
   margin-bottom: 1rem;
   font-size: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 50em) {
@@ -1495,7 +1503,6 @@ a:hover {
 
 .compete-room {
   margin-top: 2rem;
-  margin-right: 1rem;
   border: 1px solid black;
   background-color: #fafafa;
   -webkit-box-shadow: 2px 5px 10px 0 #6e6e6e;
@@ -1504,12 +1511,30 @@ a:hover {
   font-size: 1.4rem;
 }
 
+@media (min-width: 50em) {
+  .compete-room {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    min-width: 50%;
+  }
+}
+
 .compete-room-darkmode {
   margin-top: 2rem;
   margin-right: 1rem;
   background-color: #BB86FC;
   border-radius: 12px;
   font-size: 1.4rem;
+}
+
+@media (min-width: 50em) {
+  .compete-room-darkmode {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    min-width: 50%;
+  }
 }
 
 .compete-roomText {
