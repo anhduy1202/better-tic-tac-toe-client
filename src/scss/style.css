@@ -984,7 +984,7 @@ a:hover {
 .player1Overlay {
   position: absolute;
   background-color: transparent;
-  width: 220px;
+  width: 300px;
   height: 290px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1010,7 +1010,7 @@ a:hover {
 
 @media (min-height: 850px) {
   .player1Overlay {
-    width: 300px;
+    width: 400px;
     height: 380px;
   }
 }
@@ -1018,7 +1018,7 @@ a:hover {
 .player2Overlay {
   position: absolute;
   background-color: transparent;
-  width: 290px;
+  width: 300px;
   height: 290px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1044,7 +1044,7 @@ a:hover {
 
 @media (min-height: 850px) {
   .player2Overlay {
-    width: 300px;
+    width: 400px;
     height: 380px;
   }
 }
