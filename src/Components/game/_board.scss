@@ -10,11 +10,11 @@
     cursor: pointer;
     display: grid;
     place-items: center;
-    font-size: 40px;
+    font-size: 2rem;
     color: $veryDarkBlue;
     font-family: Arial, Helvetica, sans-serif;
     @include breakpoint-down(small) {
-      font-size: 2rem;
+      font-size: 1.5rem;
    }
   }
 
@@ -27,18 +27,18 @@
     cursor: pointer;
     display: grid;
     place-items: center;
-    font-size: 40px;
+    font-size: 2rem;
     color: #03DAC6;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     @include breakpoint-down(small) {
-      font-size: 2rem;
+      font-size: 1.5rem;
    }
 
   }
   .board {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -52,14 +52,14 @@
   height: 350px;
 }
   @include breakpoint-down(small) {
-    width: 240px;
-    height: 240px;
+    width: 210px;
+    height: 210px;
   }
     
   }
   .board-darkmode {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -73,8 +73,8 @@
   height: 350px;
 }
   @include breakpoint-down(small) {
-    width: 240px;
-    height: 240px;
+    width: 210px;
+    height: 210px;
   }
   }
 
@@ -90,8 +90,8 @@
    
     position: absolute;
     background-color: transparent;
-    width: 300px;
-    height: 380px;
+   width: 250px;
+    height: 300px;
     justify-content:center;
   align-items: flex-end;
   @include breakpoint-up(medium) {
@@ -103,8 +103,8 @@
 height: 430px;
 }
 @include breakpoint-down(small) {
-  width: 240px;
-  height: 320px;
+  width: 210px;
+  height: 290px;
 }
    
   
@@ -113,20 +113,20 @@ height: 430px;
    
     position: absolute;
     background-color: transparent;
-    width: 300px;
-    height: 380px;
+     width: 250px;
+    height: 300px;
     justify-content:center;
   align-items: flex-end; 
   @include breakpoint-up(medium) {
     width: 400px;
   height: 480px;
 }@include breakpoint-down(small) {
-  width: 240px;
-  height: 320px;
+  width: 210px;
+  height: 290px;
 }
 @include breakpoint-up(large) {
-  width: 350px;
-height: 430px;
+   width: 350px;
+  height: 430px;
 }
    
   
@@ -138,9 +138,9 @@ height: 430px;
   .win-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 300px;
+    width: 250px;
     border: 5px solid black;
-    height: 380px;
+    height: 300px;
     text-align: center;
     background-color: $darkBlue;
     opacity: 0.9;
@@ -157,8 +157,8 @@ height: 430px;
   height: 430px;
   }
   @include breakpoint-down(small) {
-    width: 240px;
-    height: 320px;
+     width: 210px;
+  height: 290px;
   }
   }
 
@@ -181,9 +181,9 @@ height: 430px;
   .draw-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 300px;
+    width: 250px;
     border: 5px solid black;
-    height: 380px;
+    height: 300px;
     text-align: center;
     background-color: $darkBlue;
     opacity: 0.9;
@@ -196,8 +196,8 @@ height: 430px;
     height: 480px;
   }
   @include breakpoint-down(small) {
-    width: 240px;
-    height: 320px;
+    width: 210px;
+  height: 290px;
   }
   @include breakpoint-up(large) {
     width: 350px;
