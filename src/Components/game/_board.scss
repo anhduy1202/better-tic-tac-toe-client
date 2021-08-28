@@ -3,15 +3,13 @@
 
 
   .board {
-    width: 250px;
-    height: 250px;
+    min-width: 220px;
+    height: 220px;
     align-self: center;
     margin-right: 3rem;
     background-color: white;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-template-rows: repeat(5, minmax(0, 1fr));
-
+    display: flex;
+    flex-direction: column;
     position: relative;
     @include breakpoint-up(medium) {
       width: 400px;
@@ -25,16 +23,13 @@
     
   }
   .board-darkmode {
-    width: 250px;
-    height: 250px;
+    min-width: 220px;
+    height: 220px;
     background-color: black;
-    display: grid;
+    display: flex;
     align-self: center;
     margin-right: 3rem;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-template-rows: repeat(5, minmax(0, 1fr));
-
+    flex-direction: column;
     position: relative;
     @include breakpoint-up(medium) {
       width: 400px;
@@ -47,52 +42,66 @@
   
   }
   .square {
+    flex: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    width: 100%;
+    @include breakpoint-down(medium){
+          max-width:44px;
+          font-size: 1.5rem;
+    }
+    font-size: 2rem;
+    text-align:center;
     border: 2px solid $darkBlue;
     border-radius: 6px;
     background:none;
     cursor: pointer;
-    display: grid;
     place-items: center;
-    font-size: 2rem;
+   
     color: $veryDarkBlue;
     font-family: Arial, Helvetica, sans-serif;
-    @include breakpoint-down(small) {
-      font-size: 2rem;
-   }
+    
   }
 
   .square-darkmode {
-    
+    flex: 20%;
     height: 100%;
-    width: 100%;
+    @include breakpoint-down(medium){
+      max-width:44px;
+      font-size: 1.5rem;
+}
+font-size: 2rem;
     border: 2px solid #BB86FC;
     border-radius: 6px;
     background:none;
     cursor: pointer;
     display: grid;
     place-items: center;
-    font-size: 32px;
-    color: #03DAC6;
+ 
+  color: #03DAC6;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    @include breakpoint-down(small) {
-      font-size: 2rem;
-   }
+   
 
   }
 
  
- 
+  .row {
+    flex: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
  
   .player1Overlay{
    
     position: absolute;
     background-color: transparent;
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 290px;
     justify-content:center;
   align-items: flex-end;
   @include breakpoint-up(medium) {
@@ -111,8 +120,8 @@ height: 430px;
    
     position: absolute;
     background-color: transparent;
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 290px;
     justify-content:center;
   align-items: flex-end; 
   @include breakpoint-up(medium) {
@@ -133,8 +142,8 @@ height: 430px;
   .win-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border: 5px solid black;
     text-align: center;
     background-color: $darkBlue;
@@ -173,8 +182,8 @@ height: 430px;
   .draw-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border: 5px solid black;
     text-align: center;
     background-color: $darkBlue;
@@ -240,7 +249,6 @@ height: 430px;
   }
 
   .player1Text, .player2Text  {
-    margin-top: 2rem;
     @include breakpoint-up(medium) {
       font-size: 2rem;
    }
@@ -249,7 +257,6 @@ height: 430px;
   }
 
   .player1Text-darkmode {
-    margin-top: 2rem;
     color:white;
     @include breakpoint-up(medium) {
       font-size: 2rem;
@@ -257,7 +264,6 @@ height: 430px;
 
   }
   .player2Text-darkmode {
-    margin-top: 2rem;
     color:white;
     @include breakpoint-up(medium) {
       font-size: 2rem;
@@ -267,7 +273,7 @@ height: 430px;
     flex-direction: column;
     min-height: 76vh;
 overflow: auto;
-width: 84%;
+width: 100%;
 align-items: flex-start;
 
   }
@@ -319,17 +325,15 @@ align-items: flex-start;
 
   .user-container {
     flex-direction: column; 
-    align-items: flex-end;
     margin-bottom: 1rem;
-    font-size: 1.125rem;
+    margin-left: 5rem;
+    font-size: 1rem;
     align-self: center;
+    
     @include breakpoint-up(medium) {
       font-size: 1.4rem;
    }
-   @include breakpoint-down(small) {
-    font-size: 1rem;
-
-  }
+  
   @include breakpoint-up(large) {
     font-size: 1.2rem;
 
@@ -387,12 +391,12 @@ align-items: flex-start;
 
   .rule-container {
    
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 120px;
     position: absolute;
     text-align: center;
     align-self: center;
-    transform: translateY(0%);
+    transform: translateY(50%);
     border-radius: 16px;
     box-shadow: 5px 10px 20px 0 #be98c2;;
     background-color: #D4B2D8;
@@ -415,14 +419,14 @@ align-items: flex-start;
   }
 
   .rule-container-darkmode {
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 150px;
     font-size:1rem;
 
     position: absolute;
     text-align: center;
     align-self: center;
-    transform: translateY(0%);
+    transform: translateY(50%);
     border-radius: 16px;
     background-color: #BB86FC;
     opacity: 1;
@@ -445,7 +449,7 @@ align-items: flex-start;
     cursor: pointer;
     align-self: flex-end;
     padding:0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: transparent;
     border:none;
     color: $darkBlue;
@@ -465,7 +469,7 @@ align-items: flex-start;
      cursor: pointer;
     align-self: flex-end;
     padding:0.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: transparent;
     border:none;
     color: #00ffe5;
