@@ -1,9 +1,54 @@
 @import "../../scss/variables";
 @import "../../scss/mixins";
 
-.square {
-    flex: 20%;
+
+  .board {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    margin-right: 3rem;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+
+    position: relative;
+    @include breakpoint-up(medium) {
+      width: 400px;
+    height: 400px;
+  }
+  @include breakpoint-up(large) {
+    width: 350px;
+  height: 350px;
+}
+ 
+    
+  }
+  .board-darkmode {
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    display: grid;
+    align-self: center;
+    margin-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+
+    position: relative;
+    @include breakpoint-up(medium) {
+      width: 400px;
+    height: 400px;
+  }
+  @include breakpoint-up(large) {
+    width: 350px;
+  height: 350px;
+}
+  
+  }
+  .square {
     height: 100%;
+    width: 100%;
     border: 2px solid $darkBlue;
     border-radius: 6px;
     background:none;
@@ -19,8 +64,9 @@
   }
 
   .square-darkmode {
-    flex: 20%;
+    
     height: 100%;
+    width: 100%;
     border: 2px solid #BB86FC;
     border-radius: 6px;
     background:none;
@@ -36,60 +82,17 @@
    }
 
   }
-  .board {
-    width: 180px;
-    height: 180px;
-    align-self: center;
-    margin-right: 4rem;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    @include breakpoint-up(medium) {
-      width: 400px;
-    height: 400px;
-  }
-  @include breakpoint-up(large) {
-    width: 350px;
-  height: 350px;
-}
- 
-    
-  }
-  .board-darkmode {
-    width: 180px;
-    height: 180px;
-    background-color: black;
-    display: flex;
-    align-self: center;
-    margin-right: 4rem;
-    flex-direction: column;
-    position: relative;
-    @include breakpoint-up(medium) {
-      width: 400px;
-    height: 400px;
-  }
-  @include breakpoint-up(large) {
-    width: 350px;
-  height: 350px;
-}
-  
-  }
 
  
-  .row {
-    flex: 20%;
-    display: flex;
-    flex-direction: row;
-  }
+ 
 
  
   .player1Overlay{
    
     position: absolute;
     background-color: transparent;
-    width: 180px;
-    height: 230px;
+    width: 250px;
+    height: 300px;
     justify-content:center;
   align-items: flex-end;
   @include breakpoint-up(medium) {
@@ -108,8 +111,8 @@ height: 430px;
    
     position: absolute;
     background-color: transparent;
-    width: 180px;
-    height: 230px;
+    width: 250px;
+    height: 300px;
     justify-content:center;
   align-items: flex-end; 
   @include breakpoint-up(medium) {
@@ -130,8 +133,8 @@ height: 430px;
   .win-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 180px;
-    height: 230px;
+    width: 250px;
+    height: 300px;
     border: 5px solid black;
     text-align: center;
     background-color: $darkBlue;
@@ -170,8 +173,8 @@ height: 430px;
   .draw-overlay {
     transition: ease-in 400ms;
     position: absolute;
-    width: 180px;
-    height: 230px;
+    width: 250px;
+    height: 300px;
     border: 5px solid black;
     text-align: center;
     background-color: $darkBlue;
@@ -389,7 +392,7 @@ align-items: flex-start;
     position: absolute;
     text-align: center;
     align-self: center;
-    transform: translateY(50%);
+    transform: translateY(0%);
     border-radius: 16px;
     box-shadow: 5px 10px 20px 0 #be98c2;;
     background-color: #D4B2D8;
@@ -419,7 +422,7 @@ align-items: flex-start;
     position: absolute;
     text-align: center;
     align-self: center;
-    transform: translateY(50%);
+    transform: translateY(0%);
     border-radius: 16px;
     background-color: #BB86FC;
     opacity: 1;
