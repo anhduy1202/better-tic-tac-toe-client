@@ -46,6 +46,7 @@ font-size: $font-mdlg;
     height: 100vh;
     overflow: auto;
     flex-direction: column;
+    overflow-x: hidden;
    
 }   
 
@@ -56,4 +57,5 @@ font-size: $font-mdlg;
     width:100vw;
     overflow: auto;
     flex-direction: column;
+    overflow-x: hidden;
 }
