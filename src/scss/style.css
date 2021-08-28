@@ -807,11 +807,11 @@ a:hover {
 }
 
 .board {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 4rem;
+  margin-right: 3rem;
   background-color: white;
   display: -ms-grid;
   display: grid;
@@ -837,14 +837,14 @@ a:hover {
 }
 
 .board-darkmode {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   background-color: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 4rem;
+  margin-right: 3rem;
   display: grid;
   -ms-grid-columns: (minmax(0, 1fr))[5];
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -913,8 +913,8 @@ a:hover {
 .player1Overlay {
   position: absolute;
   background-color: transparent;
-  width: 180px;
-  height: 230px;
+  width: 250px;
+  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -940,8 +940,8 @@ a:hover {
 .player2Overlay {
   position: absolute;
   background-color: transparent;
-  width: 180px;
-  height: 230px;
+  width: 250px;
+  height: 300px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -972,8 +972,8 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 180px;
-  height: 230px;
+  width: 250px;
+  height: 300px;
   border: 5px solid black;
   text-align: center;
   background-color: #219EBC;
@@ -1031,8 +1031,8 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 180px;
-  height: 230px;
+  width: 250px;
+  height: 300px;
   border: 5px solid black;
   text-align: center;
   background-color: #219EBC;
