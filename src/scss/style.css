@@ -806,67 +806,19 @@ a:hover {
   }
 }
 
-.square {
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
-  height: 100%;
-  border: 2px solid #219EBC;
-  border-radius: 6px;
-  background: none;
-  cursor: pointer;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  font-size: 2rem;
-  color: #023047;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (max-width: 25em) {
-  .square {
-    font-size: 2rem;
-  }
-}
-
-.square-darkmode {
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
-  height: 100%;
-  border: 2px solid #BB86FC;
-  border-radius: 6px;
-  background: none;
-  cursor: pointer;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  font-size: 32px;
-  color: #03DAC6;
-  font-weight: 700;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@media (max-width: 25em) {
-  .square-darkmode {
-    font-size: 2rem;
-  }
-}
-
 .board {
   width: 180px;
   height: 180px;
-  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
       align-self: center;
   margin-right: 4rem;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[5];
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+  -ms-grid-rows: (minmax(0, 1fr))[5];
+      grid-template-rows: repeat(5, minmax(0, 1fr));
   position: relative;
 }
 
@@ -888,16 +840,16 @@ a:hover {
   width: 180px;
   height: 180px;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row-align: center;
       align-self: center;
   margin-right: 4rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[5];
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+  -ms-grid-rows: (minmax(0, 1fr))[5];
+      grid-template-rows: repeat(5, minmax(0, 1fr));
   position: relative;
 }
 
@@ -915,17 +867,47 @@ a:hover {
   }
 }
 
-.row {
-  -webkit-box-flex: 20%;
-      -ms-flex: 20%;
-          flex: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+.square {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #219EBC;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  color: #023047;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 25em) {
+  .square {
+    font-size: 2rem;
+  }
+}
+
+.square-darkmode {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #BB86FC;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  color: #03DAC6;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 25em) {
+  .square-darkmode {
+    font-size: 2rem;
+  }
 }
 
 .player1Overlay {
@@ -1333,8 +1315,8 @@ a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
   border-radius: 16px;
   -webkit-box-shadow: 5px 10px 20px 0 #be98c2;
           box-shadow: 5px 10px 20px 0 #be98c2;
@@ -1373,8 +1355,8 @@ a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
   border-radius: 16px;
   background-color: #BB86FC;
   opacity: 1;
