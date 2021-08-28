@@ -854,8 +854,8 @@ a:hover {
 }
 
 .board {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,16 +881,9 @@ a:hover {
   }
 }
 
-@media (max-width: 25em) {
-  .board {
-    width: 210px;
-    height: 210px;
-  }
-}
-
 .board-darkmode {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -916,13 +909,6 @@ a:hover {
   }
 }
 
-@media (max-width: 25em) {
-  .board-darkmode {
-    width: 210px;
-    height: 210px;
-  }
-}
-
 .row {
   -webkit-box-flex: 33%;
       -ms-flex: 33%;
@@ -939,8 +925,8 @@ a:hover {
 .player1Overlay {
   position: absolute;
   background-color: transparent;
-  width: 250px;
-  height: 300px;
+  width: 180px;
+  height: 230px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -963,18 +949,11 @@ a:hover {
   }
 }
 
-@media (max-width: 25em) {
-  .player1Overlay {
-    width: 210px;
-    height: 290px;
-  }
-}
-
 .player2Overlay {
   position: absolute;
   background-color: transparent;
-  width: 300px;
-  height: 380px;
+  width: 180px;
+  height: 230px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -987,13 +966,6 @@ a:hover {
   .player2Overlay {
     width: 400px;
     height: 480px;
-  }
-}
-
-@media (max-width: 25em) {
-  .player2Overlay {
-    width: 240px;
-    height: 320px;
   }
 }
 
@@ -1012,9 +984,9 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 300px;
+  width: 180px;
+  height: 230px;
   border: 5px solid black;
-  height: 380px;
   text-align: center;
   background-color: #219EBC;
   opacity: 0.9;
@@ -1044,13 +1016,6 @@ a:hover {
   .win-overlay {
     width: 350px;
     height: 430px;
-  }
-}
-
-@media (max-width: 25em) {
-  .win-overlay {
-    width: 240px;
-    height: 320px;
   }
 }
 
@@ -1078,9 +1043,9 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  width: 300px;
+  width: 180px;
+  height: 230px;
   border: 5px solid black;
-  height: 380px;
   text-align: center;
   background-color: #219EBC;
   opacity: 0.9;
@@ -1103,13 +1068,6 @@ a:hover {
   .draw-overlay {
     width: 400px;
     height: 480px;
-  }
-}
-
-@media (max-width: 25em) {
-  .draw-overlay {
-    width: 240px;
-    height: 320px;
   }
 }
 
@@ -1219,7 +1177,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 3rem;
+  margin-right: 3.5rem;
 }
 
 .game-id {
@@ -1354,8 +1312,8 @@ a:hover {
 }
 
 .rule-container {
-  height: 120px;
-  width: 230px;
+  width: 180px;
+  height: 80px;
   position: absolute;
   text-align: center;
   -ms-flex-item-align: center;
@@ -1383,13 +1341,6 @@ a:hover {
   }
 }
 
-@media (max-width: 25em) {
-  .rule-container {
-    height: 120px;
-    width: 200px;
-  }
-}
-
 @media (min-width: 64em) {
   .rule-container {
     height: 150px;
@@ -1399,8 +1350,8 @@ a:hover {
 }
 
 .rule-container-darkmode {
-  height: 120px;
-  width: 230px;
+  width: 180px;
+  height: 80px;
   position: absolute;
   text-align: center;
   -ms-flex-item-align: center;
@@ -1426,13 +1377,6 @@ a:hover {
   }
 }
 
-@media (max-width: 25em) {
-  .rule-container-darkmode {
-    height: 120px;
-    width: 200px;
-  }
-}
-
 @media (min-width: 64em) {
   .rule-container-darkmode {
     height: 150px;
@@ -1446,7 +1390,7 @@ a:hover {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: transparent;
   border: none;
   color: #219EBC;
@@ -1464,18 +1408,12 @@ a:hover {
   }
 }
 
-@media (max-width: 25em) {
-  .close {
-    font-size: 1.3rem;
-  }
-}
-
 .close-darkmode {
   cursor: pointer;
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: transparent;
   border: none;
   color: #00ffe5;
@@ -1490,12 +1428,6 @@ a:hover {
 @media (min-width: 50em) {
   .close-darkmode {
     font-size: 1.7rem;
-  }
-}
-
-@media (max-width: 25em) {
-  .close-darkmode {
-    font-size: 1.3rem;
   }
 }
 
