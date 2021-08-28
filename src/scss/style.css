@@ -874,6 +874,7 @@ a:hover {
           flex: 20%;
   height: 100%;
   max-width: 44px;
+  text-align: center;
   border: 2px solid #219EBC;
   border-radius: 6px;
   background: none;
@@ -916,13 +917,19 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .player1Overlay {
   position: absolute;
   background-color: transparent;
   width: 220px;
-  height: 300px;
+  height: 290px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -949,7 +956,7 @@ a:hover {
   position: absolute;
   background-color: transparent;
   width: 220px;
-  height: 300px;
+  height: 290px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1136,10 +1143,6 @@ a:hover {
   }
 }
 
-.player1Text, .player2Text {
-  margin-top: 2rem;
-}
-
 @media (min-width: 50em) {
   .player1Text, .player2Text {
     font-size: 2rem;
@@ -1147,7 +1150,6 @@ a:hover {
 }
 
 .player1Text-darkmode {
-  margin-top: 2rem;
   color: white;
 }
 
@@ -1158,7 +1160,6 @@ a:hover {
 }
 
 .player2Text-darkmode {
-  margin-top: 2rem;
   color: white;
 }
 
