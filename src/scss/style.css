@@ -1257,9 +1257,8 @@ a:hover {
           align-items: flex-end;
   margin-bottom: 1rem;
   font-size: 1rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 @media (min-width: 50em) {
