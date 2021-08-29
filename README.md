@@ -19,6 +19,7 @@ Better Tic Tac Toe is the way to go 🥂
 ## 🏆 Features
 
 * 🔑 User Authentication
+* 🤡 Browse as Guest
 * 🎨 Create Room
 * 🔎 Join Rooms through Room ID
 * ⚔️ Compete with other people by joining their room in real time
