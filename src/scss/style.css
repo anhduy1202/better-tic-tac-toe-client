@@ -940,8 +940,6 @@ a:hover {
   border-radius: 6px;
   background: none;
   cursor: pointer;
-  display: -ms-grid;
-  display: grid;
   place-items: center;
   color: #03DAC6;
   font-weight: 700;
