@@ -1123,7 +1123,7 @@ a:hover {
   -webkit-transition: ease-in 400ms;
   transition: ease-in 400ms;
   position: absolute;
-  min-width: 240px;
+  min-width: 290px;
   height: 290px;
   border: 5px solid black;
   text-align: center;
@@ -1201,6 +1201,7 @@ a:hover {
 @media (min-width: 50em) {
   .newGame {
     font-size: 2rem;
+    margin-top: 7rem;
   }
 }
 
@@ -1574,6 +1575,7 @@ a:hover {
 
 .compete-room {
   margin-top: 2rem;
+  margin-right: 1rem;
   border: 1px solid black;
   background-color: #fafafa;
   -webkit-box-shadow: 2px 5px 10px 0 #6e6e6e;
