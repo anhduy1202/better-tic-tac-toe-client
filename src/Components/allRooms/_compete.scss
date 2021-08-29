@@ -29,6 +29,7 @@
 .compete {
     &-room {
         margin-top: 2rem;
+        margin-right: 1rem;
         @include breakpoint-up(medium) {
             align-self: center;
            min-width: 50%;
