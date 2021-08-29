@@ -1615,8 +1615,6 @@ a:hover {
           flex-grow: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.3fr 0.5fr;
-      grid-template-columns: 0.3fr 0.5fr;
   text-align: center;
       grid-template-areas: ". roomNum" ". full";
 }
@@ -1628,8 +1626,6 @@ a:hover {
           flex-grow: 1;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.3fr 0.5fr;
-      grid-template-columns: 0.3fr 0.5fr;
   text-align: center;
       grid-template-areas: ". roomNum" ". full";
 }
