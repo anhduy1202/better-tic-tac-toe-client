@@ -15,6 +15,28 @@
         background-color: $orange;
     }
 }
+ .guest {
+    cursor: pointer;
+    border: 3.5px solid black;
+    background-color: #cac9c9;
+    font-family: $kalam;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    padding: 0 2rem 0 2rem;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    transition: ease-in-out 100ms;
+
+    &:hover {
+        background-color: $orange;
+    }
+ }
+ 
+.login-container {
+    flex-direction: column;
+    align-items: center;
+  
+}
 
 .login-darkmode {
     cursor: pointer;

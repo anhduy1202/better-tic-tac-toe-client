@@ -252,8 +252,8 @@ const GamePlay = (props) => {
 
     useEffect(() => {
 
-        const socket = io("https://better-ttt.herokuapp.com",{
-         transports: ['websocket'],
+        const socket = io({
+            'sync disconnect on unload': true
         });
 
 

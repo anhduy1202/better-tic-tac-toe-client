@@ -6,6 +6,8 @@
     font-size: 1.325rem;
     flex-direction: column;
     margin-left: 1rem;
+    align-items: center;
+    justify-content:center;
     @include breakpoint-up(medium) {
     }
 }

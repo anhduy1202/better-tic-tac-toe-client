@@ -18,9 +18,9 @@ function App() {
   const [random, setRandom] = useState(0);
   const [rooms, setRooms] = useState();
   const [turn, setTurn] = useState();
-
+  const [isGuest, setGuest] = useState(false);
   const [isDarkMode, setDarkMode] = useState(false);
-
+  const [randomGuest, setRandomGuest] = useState(123456);
 
 
 
@@ -30,8 +30,9 @@ function App() {
 
       <main className={isDarkMode ? `App-darkmode` : `App`}>
         <NavBar isAuthenticated={isAuthenticated} isDarkMode={isDarkMode}
-          setDarkMode={setDarkMode}
+          setDarkMode={setDarkMode} isGuest={isGuest} setGuest={setGuest}
         />
+            {console.log(isGuest)}
         <div className={isDarkMode ? `wrapper-darkmode ` : `wrapper `}>
           <Switch>
             <Route exact path="/">
@@ -43,11 +44,15 @@ function App() {
                 turn={turn}
                 setTurn={setTurn}
                 isDarkMode={isDarkMode}
+                isGuest={isGuest}
+                setGuest={setGuest}
+                randomGuest={randomGuest}
+                setRandomGuest={setRandomGuest}
 
 
               />
             </Route>
-            {isAuthenticated && (
+            {isAuthenticated  && !isGuest && (
               <div className="room">
                 <Route exact path="/create">
                   <CreateRoom
@@ -85,8 +90,45 @@ function App() {
 
               </div>
             )}
+            {!isAuthenticated && isGuest && (
+              <div className="room">
+                <Route exact path="/create">
+                  <CreateRoom
+                    random={random}
+                    setRooms={setRooms}
+                    nickname={randomGuest}
+                    turn={turn}
+                    setTurn={setTurn}
+                    isDarkMode={isDarkMode}
+                  />
+                </Route>
+                <Route path="/gameplay/:rooms">
+                  <GamePlay
+                    rooms={rooms}
+                    nickname={randomGuest}
+                    isDarkMode={isDarkMode}
+
+
+                  />
+                </Route>
+                <Route exact path='/compete'>
+                  <Compete
+                    rooms={rooms}
+                    setRooms={setRooms}
+                    nickname={randomGuest}
+                    turn={turn}
+                    isDarkMode={isDarkMode}
+
+
+                  />
+
+                </Route>
+
+
+              </div>
+            )}
             <Route exact path='/about'>
-              <About isDarkMode={isDarkMode}/>
+              <About isDarkMode={isDarkMode} />
             </Route>
             <Route>
               <Error isDarkMode={isDarkMode} />

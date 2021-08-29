@@ -5,6 +5,7 @@
     flex-direction: column;
     text-align: center;
     height: auto;
+    
     @include breakpoint-up(medium) {
         transform: translateY(5%);
         }

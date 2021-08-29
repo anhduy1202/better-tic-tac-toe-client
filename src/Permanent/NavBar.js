@@ -4,32 +4,34 @@ import darkMode from '../image/dark-mode.png';
 import lightMode from '../image/light-mode.png';
 const NavBar = (props) => {
     const history = useHistory();
-    const { isAuthenticated, isDarkMode, setDarkMode } = props;
+    const { isGuest, setGuest, isAuthenticated, isDarkMode, setDarkMode } = props;
 
     const handleDarkMode = () => {
         setDarkMode(!isDarkMode);
     }
-  
+
     return (
-        <nav className = { isDarkMode ? "nav-darkmode  flex flex-jc-c flex-ai-c" : "nav flex flex-jc-c flex-ai-c"}>
+        <nav className={isDarkMode ? "nav-darkmode  flex flex-jc-c flex-ai-c" : "nav flex flex-jc-c flex-ai-c"}>
 
             <section className="link flex flex-ai-c ">
                 <Link to='/' className="nav-home" > Home </Link>
-                {!isAuthenticated && (
+                { (!isAuthenticated && !isGuest) && (
                     <Link to='/about' className="nav-about"> About </Link>
                 )}
-                {isAuthenticated && (
+                {(isAuthenticated || isGuest) && (
                     <div className="additional flex flex-ai-c">
                         <Link to='/compete' className="nav-compete"> {`Compete ⚔️`} </Link>
-                        <a className=".logout"> <Logout /> </a>
+                        {isAuthenticated && (
+                            <a className=".logout"> <Logout /> </a>
+                        )}
                     </div>
                 )}
             </section>
             {!isDarkMode && (
-            <img className="nav-darkMode" src={darkMode} alt="Dark Mode" onClick={handleDarkMode}/>
+                <img className="nav-darkMode" src={darkMode} alt="Dark Mode" onClick={handleDarkMode} />
             )}
-             {isDarkMode && (
-            <img className="nav-darkMode" src={lightMode} alt="Dark Mode" onClick={handleDarkMode}/>
+            {isDarkMode && (
+                <img className="nav-darkMode" src={lightMode} alt="Dark Mode" onClick={handleDarkMode} />
             )}
         </nav>
     );
