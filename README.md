@@ -1,4 +1,5 @@
 # Better Tic Tac Toe ✖️⭕
+<img src="https://img.shields.io/github/stars/anhduy1202/better-tic-tac-toe-client"/> <img src="https://img.shields.io/github/issues/anhduy1202/better-tic-tac-toe-client"/> ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anhduy1202/better-tic-tac-toe-client) <img src="https://img.shields.io/github/license/anhduy1202/better-tic-tac-toe-client"/>
 
 ## 🎮🎲 Welcome to Better Tic Tac Toe 
 
